@@ -12,6 +12,11 @@
       <label>No</label>
       <input type="submit">
     </form>
-    Hi {{ person }}! I think you're {{ compliment }}!
+    Hi {{ person }}! I think you're: 
+    <ul>
+    {% for word in compliment %}
+      <li>{{ word }}</li> 
+    {% endfor %}
+  </ul> 
 </body>
 </html>
